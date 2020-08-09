@@ -2,6 +2,7 @@
   "name": "jmichaelward/wp-plugin-composer",
   "description": "An example WordPress plugin to test activation hook-based installation of Composer dependencies.",
   "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
   "authors": [
 	{
 	  "name": "Jeremy Ward",
