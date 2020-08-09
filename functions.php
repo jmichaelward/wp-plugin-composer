@@ -21,7 +21,7 @@ function maybe_install_dependencies( string $plugin_class ) {
 		}
 
 		// Extract our composer.phar into the vendor directory.
-		$composer_path = "{$plugin_dir}/vendor/composer";
+		$composer_path = "{$plugin_dir}/bin/extractedComposer";
 
 		if ( ! is_readable( $composer_path ) ) {
 			$composer = new \Phar( "{$plugin_dir}/bin/composer.phar" );
