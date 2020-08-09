@@ -31,7 +31,7 @@ function maybe_install_dependencies( string $plugin_class ) {
 		require_once "{$composer_path}/vendor/autoload.php";
 
 		// Create the installer command.
-		$input = new ArrayInput( [ 'command' => 'install', '-d' => "{$plugin_dir}" ] );
+		$input = new ArrayInput( [ 'command' => 'install', '-d' => "{$plugin_dir}", '--no-dev' => true ] );
 
 		// Run the installer.
 		$application = new Application();
