@@ -4,8 +4,11 @@ managing their third-party dependencies.
 
 ## Installation
 To create a new starter plugin, simply use the command line to navigate to the `plugins` directory of your WordPress
-install, then run `composer create-project jmichaelward/wp-plugin-composer [your-plugin-name]`, replacing
+install, then run `composer create-project jmichaelward/wp-plugin-composer [your-plugin-name] -s dev`, replacing
 `your-plugin-name` with the desired name of your plugin.
+
+***Note: Because this package is still in beta, everything after your-plugin-name is required to get Composer to pull
+down the source code. You'll want to remove the .git repository when prompted by the installation.***
 
 Once installed, you'll want to make a few additional updates:
 - Perform a search-replace of `JMichaelWard\WPPluginComposer` on the plugin with your own `<vendor>\<plugin>` namespace.
