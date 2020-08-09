@@ -1,0 +1,19 @@
+{
+  "name": "jmichaelward/wp-plugin-composer",
+  "description": "An example WordPress plugin to test activation hook-based installation of Composer dependencies.",
+  "type": "wordpress-plugin",
+  "authors": [
+	{
+	  "name": "Jeremy Ward",
+	  "email": "jeremy@jmichaelward.com"
+	}
+  ],
+  "suggest": {
+	"jmichaelward/oops-wp-plus": "Provides interfaces and abstract structures to facilitate plugin scaffolding."
+  },
+  "autoload": {
+	"psr-4": {
+	  "JMichaelWard\\WPPluginComposer\\": "src/"
+	}
+  }
+}
